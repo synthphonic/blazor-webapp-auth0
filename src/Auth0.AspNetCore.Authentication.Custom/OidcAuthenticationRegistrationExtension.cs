@@ -6,8 +6,10 @@ public static class OidcAuthenticationRegistrationExtension
 {
     public static void AddOidcPKCEAuthentication<TRemoteUser>(this IServiceCollection services, Action<AuthOptions> options) 
         where TRemoteUser : AccountClaimsPrincipalFactory<RemoteUserAccount>
-    {
+    {        
         Console.WriteLine("INSIDE AddOidcPKCEAuthentication");
+        
+        services.AddAuthenticationCore();
 
         services.AddOidcAuthentication(oidcOptions =>
         {
