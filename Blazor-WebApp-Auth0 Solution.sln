@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.RenderAuto.WebApp", "samples\int-auto\Blazor.RenderAuto.WebApp\Blazor.RenderAuto.WebApp.csproj", "{D262BC3A-E204-419A-AE02-F6C0A24CB81A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth0.AspNetCore.Authentication.Custom", "src\Auth0.AspNetCore.Authentication.Custom\Auth0.AspNetCore.Authentication.Custom.csproj", "{AE576FB7-6111-4651-ACBC-9D3FC882F68E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLib", "samples\int-auto\SharedLib\SharedLib.csproj", "{A14FC14E-84AC-4FEA-8240-2CDB6F6CE38D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,11 +35,16 @@ Global
 		{AE576FB7-6111-4651-ACBC-9D3FC882F68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE576FB7-6111-4651-ACBC-9D3FC882F68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE576FB7-6111-4651-ACBC-9D3FC882F68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14FC14E-84AC-4FEA-8240-2CDB6F6CE38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14FC14E-84AC-4FEA-8240-2CDB6F6CE38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14FC14E-84AC-4FEA-8240-2CDB6F6CE38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14FC14E-84AC-4FEA-8240-2CDB6F6CE38D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{A14FC14E-84AC-4FEA-8240-2CDB6F6CE38D} = {A466E293-658F-4140-A9A7-8876274348E5}
 		{A466E293-658F-4140-A9A7-8876274348E5} = {324895AD-4248-482F-BFD9-C6E4CB07003E}
 		{F9CE5DB0-9E0D-4825-9205-47709A512554} = {A466E293-658F-4140-A9A7-8876274348E5}
 		{D262BC3A-E204-419A-AE02-F6C0A24CB81A} = {A466E293-658F-4140-A9A7-8876274348E5}
