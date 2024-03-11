@@ -8,7 +8,7 @@ using Blazor.RenderAuto.WebApp.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// builder.Services.AddCascadingAuthenticationState();
+builder.Services.AddCascadingAuthenticationState();
 // builder.Services.AddScoped<AuthenticationStateProvider, PersistingRevalidatingAuthenticationStateProvider>();
 
 // builder.Services.AddOidcPKCEAuthentication<CustomRemoteUserAccount>(options =>
