@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Components.Authorization;
 using Auth0.AspNetCore.Authentication.Custom;
 using Blazor.RenderAuto.WebApp;
 using Blazor.RenderAuto.WebApp.Client.Pages;
@@ -7,12 +8,15 @@ using Blazor.RenderAuto.WebApp.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddOidcPKCEAuthentication<CustomRemoteUserAccount>(options =>
-{
-    options.Audience = builder.Configuration["Auth0:Audience"];
-    options.ResponseType = "code";
-    options.DefaultScopes = "email";
-});
+// builder.Services.AddCascadingAuthenticationState();
+// builder.Services.AddScoped<AuthenticationStateProvider, PersistingRevalidatingAuthenticationStateProvider>();
+
+// builder.Services.AddOidcPKCEAuthentication<CustomRemoteUserAccount>(options =>
+// {
+//     options.Audience = builder.Configuration["Auth0:Audience"];
+//     options.ResponseType = "code";
+//     options.DefaultScopes = "email";
+// });
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -34,6 +38,9 @@ else
 }
 
 app.UseHttpsRedirection();
+
+// app.UseAuthentication();
+// app.UseAuthorization();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
